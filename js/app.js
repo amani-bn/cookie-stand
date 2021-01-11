@@ -1,7 +1,5 @@
 'use strict';
 
-// console.log("amaaaani");
-
 function getRandomNum(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -25,7 +23,7 @@ var Seattle = {
             this.customerPerHour[i] =Math.floor(perDay) ;
 
         };
-        console.log("perDay >>>>", perDay);
+        // console.log("perDay!>>", perDay);
     },
 
     calAmountOfCookies: function () {
