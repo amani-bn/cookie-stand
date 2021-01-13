@@ -4,7 +4,7 @@ function getRandomNum(min, max) {
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var cusPerHour = [];
 var Sales = [];
-var cities = [];
+var cities = [];//array of object 
 function City(cityName, MinCus, MaxCus, AvgCookie) {
     this.cityName = cityName;
     this.MinCus = MinCus;
@@ -56,6 +56,9 @@ function calling() {
         cities[i].render();
     }
 }
+
+
+
 function headertag() {
     var container = document.getElementById('locations');
     var tableEl = document.createElement('table');
@@ -75,6 +78,9 @@ function headertag() {
     headerRow.appendChild(tableData1);
     tableData1.textContent = 'Daily Location Total';
 }
+
+
+
 function tablefooter() {
     var container = document.getElementById('tableOne');
     var footRow = document.createElement('tr');
@@ -87,7 +93,10 @@ function tablefooter() {
         var htotal = 0;
         for (var j = 0; j < cities.length; j++) {
             htotal = htotal + cities[j].cookiePerHour[i];
+            console.log('htotal',htotal);
             TotalTotal = TotalTotal + cities[j].cookiePerHour[i];
+            console.log('totaltotal',TotalTotal);
+
         }
         var tableData99 = document.createElement('td');
         footRow.appendChild(tableData99);
