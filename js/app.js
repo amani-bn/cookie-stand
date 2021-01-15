@@ -122,14 +122,14 @@ function submiter(event){
     var name=event.target.nameCity.value;
     console.log('name',name);
 
-    var minCustHour=Number(event.target.mincushour.value);
+    var minCustHour=event.target.mincushour.value;
     console.log('mincushour',minCustHour);
 
-    var maxCustHour=Number(event.target.maxcushour.value);
+    var maxCustHour=event.target.maxcushour.value;
 
     console.log('maxncushour',maxCustHour);
 
-    var avgCookie=Number(event.target.avgeachcust.value);
+    var avgCookie=event.target.avgeachcust.value;
     console.log('avgcookie',avgCookie);
 
     var addCity = new City(name,minCustHour,maxCustHour,avgCookie)
