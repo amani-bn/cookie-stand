@@ -115,6 +115,10 @@ tablefooter();
 var citySalmon = document.getElementById('salmoShopForm');
 citySalmon.addEventListener('submit',submiter);
 
+function  deleletLastR() {
+    document.getElementById('tableOne').deleteRow(length -1);
+}
+
 function submiter(event){
     event.preventDefault();
     console.log('event',event);
@@ -129,22 +133,31 @@ function submiter(event){
 
     console.log('maxncushour',maxCustHour);
 
-    var avgCookie=event.target.avgeachcust.value;
+    var avgCookie=parseFloat(event.target.avgeachcust.value);
     console.log('avgcookie',avgCookie);
 
+    // if ((name!== null || name!==" ") && (minCustHour!== null ||minCustHour!==" ") && (maxCustHour!== null || maxCustHour!==" ") &&(avgCookie!== null || avgCookie!==" "))
+    // {      
     var addCity = new City(name,minCustHour,maxCustHour,avgCookie)
-
+    console.log('add');
     var section = document.getElementById('locations');
     section.innerHTML='';
     console.log('add city');
    headertag();
     for(var i=0;i<cities.length;i++){
+
         cities[i].GetCusPerHour();
         cities[i].getCookiePerHour();
+        // deleletLastR();
         cities[i].render();
         
     
-
-    }
+    }   
+    
+    
     tablefooter();
+// }
+// else{
+// alert('Please Insert a value ');
+// }
 }

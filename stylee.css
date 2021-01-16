@@ -11,13 +11,21 @@ body{
 header h1{
     text-align:left;
     font-style: italic;
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Yusei Magic', sans-serif;
     background-color:#999b84;
     color: black;
-    padding-top: 20px ;
-    padding-bottom: 20px;
+    /* padding-top: 20px ;
+    padding-bottom: 20px; */
+    float: left;
+    margin: -35px 0px 0px 28px;
 
+
+}
+header ul li{
+display:inline-block;
+float: right;
+margin:-2em;
 }
 
 
@@ -102,7 +110,7 @@ main h2{
     background-color: #efd9d1;
     height: 50px; 
     width: 100%; 
-   padding: 20px 90px 20px 200px;
+   /* padding: 20px 90px 20px 200px; */
    font-family: 'Yusei Magic', sans-serif;
    color:black;
 }
