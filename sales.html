@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales Page</title>
-    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="stylesale.css">
 </head>
 
 <body>
@@ -15,16 +15,19 @@
             <fieldset>
                 <legend>salmo Shop</legend>
                 <label for="nameCity">City Name:</label>
-                <input type="text" name="nameCity" id="nameCity">
+                <input type="text" name="nameCity" id="nameCity" required >
                 <br>
                 <label for="mincushour">Min hourly customers:</label>
-                <input type="text" name="mincushour" id="mincushour">
+                <input type="number" name="mincushour" id="mincushour" required min="0"
+                >
                 <br>
                 <label for="maxcushour">Max hourly customers:</label>
-                <input type="text" name="maxcushour" id="maxcushour">
+                <input type="number" name="maxcushour" id="maxcushour" required min="0"
+                >
                 <br>
                 <label for="avgeachcust">Average Cookies per customer:</label>
-                <input type="text" name="avgeachcust" id="avgeachcust">
+                <input type="text" name="avgeachcust" id="avgeachcust" required min="0"
+                >
                 <br>
 
                 <button type="submit">check </button>
@@ -32,7 +35,7 @@
             </fieldset>
 
         </form>
-        <h1 style="color: blue;font-size: 3rem;">This is Sales List</h1>
+        <h1>This is Sales List</h1>
         <div id="locations">
 
 

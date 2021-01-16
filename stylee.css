@@ -1,28 +1,31 @@
-td{
-    border:2px solid black;
-}
-table{
-    border-collapse: collapse;
-}
-   
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+ 
 
 *{
     padding: 10px;
     margin: 10px;
 }
 body{
-    background-color:powderblue;
+    background-color:#d0e8f2;
 }
 header h1{
-    text-align: center;
+    text-align:left;
     font-style: italic;
-    font-size: 5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-family: 'Yusei Magic', sans-serif;
     background-color:#999b84;
     color: black;
-    padding-top: 20px ;
-    padding-bottom: 20px;
+    /* padding-top: 20px ;
+    padding-bottom: 20px; */
+    float: left;
+    margin: -35px 0px 0px 28px;
 
+
+}
+header ul li{
+display:inline-block;
+float: right;
+margin:-2em;
 }
 
 
@@ -40,17 +43,19 @@ nav {
 nav ul li {
       display:inline-block;
       list-style-type:none;
-      color:darkblue;
+      /* color:darkblue; */
       overflow:hidden;
       text-decoration: none;
       margin: 50px;
       padding:0 10px 10px 0;
       font-size: 1rem;
+      font-family: Georgia;
+/* color: rgb(235, 69, 8); */
 }
 
 nav ul li a{
     display: block;
-    color: darkblue;
+    color:rgb(8, 8, 99);
     text-align: center;
     text-decoration:none;
 }
@@ -70,9 +75,14 @@ nav ul li a:hover{
 main h1{
     margin:50px ;
     font-size: 1rem;
+    font-family: 'Yusei Magic', sans-serif;
+    color:black;
 }
 main p{
     overflow:hidden;
+    font-family: Georgia;
+    color:rgb(8, 8, 99);
+    font-weight: bold;
 
 }
 #img3{
@@ -84,11 +94,14 @@ main p{
 #img5{
     margin-left: 25px;
 }
+
 main div h1{
     text-align: center;
     font-style: italic;
     font-size: 1rem;
     color: darkorchid;
+    font-family: 'Yusei Magic', sans-serif;
+    color:black;
 }
 main h2{
     text-align:left;
@@ -97,14 +110,26 @@ main h2{
     background-color: #efd9d1;
     height: 50px; 
     width: 100%; 
-   padding: 20px 90px 20px 200px;
+   /* padding: 20px 90px 20px 200px; */
+   font-family: 'Yusei Magic', sans-serif;
+   color:black;
 }
 footer{
     background-color: #999b84;
     height: 100%; 
     width: 100%; 
-    font-style: oblique;
+    /* font-style: oblique;
     
-    font-size: 2rem;
+    font-size: 2rem; */
+
+}
+footer h1{
+    font-family: 'Yusei Magic', sans-serif;
+    color:black;
+}
+footer ul li {
+    font-family: Georgia;
+    color:rgb(8, 8, 99);
+    font-weight: bold;
 
 }
